@@ -9,7 +9,7 @@ export default function App() {
         textBoxRef, 
         startGame,
         handleChange
-    ] = wordGame()
+    ] = wordGame(15)
 	
 	return (
 		<div>
