@@ -1,14 +1,15 @@
-import React from "react"
+import {useEffect, useRef, useState} from "react"
 
 export default function App() {
 	const STARTING_TIME = 5
 
-	const [text, setText] = React.useState("")
-	const [timeRemaining, setTimeRemaining] = React.useState(STARTING_TIME)
-	const [isGameRunning, setIsGameRunning] = React.useState(false)
-	const [wordCount, setWordCount] = React.useState(0)
+	const [text, setText] = useState("")
+	const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME)
+	const [isGameRunning, setIsGameRunning] = useState(false)
+	const [wordCount, setWordCount] = useState(0)
+	const textBoxRef = useRef(null)
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (isGameRunning) {
 			if (timeRemaining > 0) {
 				setTimeout(() => {
@@ -24,6 +25,8 @@ export default function App() {
 			setIsGameRunning(true)
 			setTimeRemaining(STARTING_TIME)
 			setText("")
+			textBoxRef.current.disabled = false
+			textBoxRef.current.focus()
 	}
 
 	function endGame() {
@@ -48,6 +51,7 @@ export default function App() {
 				value={text} 
 				onChange={handleChange} 
 				disabled={isGameRunning === false}
+				ref={textBoxRef}
 			/>
 			<h4>Time Remaing: {timeRemaining}</h4>
 			<button 
