@@ -23,6 +23,10 @@ button {
     text-transform: uppercase;
 }
 
+button:disabled {
+    cursor: not-allowed;
+}
+
 h1 {
     font-size: 20px;
     text-align:center;
