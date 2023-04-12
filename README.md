@@ -1,5 +1,21 @@
 # Getting Started with Create React App
 
+## Description
+-I created this while following the react advanced course from scrimba 
+-Its main purpose was to practice using hooks such as useRef and useContext
+
+## Required Files
+-Git  
+-Node.js  
+-Npm (which should be included with your node installation)  
+-Code editor (Visual Studio Code recommended)  
+
+## Installation
+-Open terminal  
+-Clone the repo with: $ git clone {url}  
+-cd into the folder  
+-type: $ npm install 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
