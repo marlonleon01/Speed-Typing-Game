@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
 ## Description
--I created this while following the react advanced course from scrimba 
--Its main purpose was to practice using hooks such as useRef and useContext
+-I created this while following the react advanced course from scrimba    
+-Its main purpose was to practice using hooks such as useRef and useContext   
 
 ## Required Files
 -Git  
